@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>村落導覽 - 記憶花園</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .village-map-container {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .village-map-container img {
+            max-width: 100%;
+            height: auto;
+            border: 3px solid #a3b18a;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+        .area-description {
+            margin-bottom: 20px;
+            padding: 15px;
+            background-color: #fdf6e3;
+            border-radius: 8px;
+        }
+        .area-description h4 {
+            color: #5d7052;
+            margin-bottom: 8px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <!-- ... 您的標準 header (包含更新後的導覽列) ... -->
+        <div class="container">
+            <div class="logo">記憶花園</div>
+            <button class="menu-toggle" id="menu-toggle-btn" aria-label="Toggle navigation" aria-expanded="false">&#9776;</button>
+            <nav id="main-nav">
+                 <ul>
+                    <li><a href="index.html#hero-section">首頁</a></li>
+                    <li><a href="village-guide.html" class="active">村落導覽</a></li>
+                    <li><a href="index.html#about-us">關於我們</a></li>
+                    <li><a href="index.html#experience-dementia">同理心體驗</a></li>
+                    <li><a href="index.html#our-work">我們的行動</a></li>
+                    <li><a href="index.html#impact-stories">成果與故事</a></li>
+                    <li><a href="ai-helper.html">AI小幫手</a></li>
+                    <li><a href="index.html#get-involved">支持我們</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <section class="page-specific-content">
+                <h2><span aria-hidden="true">🗺️</span> 記憶花園 村落導覽</h2>
+                <p>歡迎來到記憶花園！這是一張我們村落的平面配置圖，您可以點擊下方連結或參考圖示來了解各個區域的功能與特色。</p>
+
+                <div class="village-map-container">
+                    <img src="images/map-layout.jpg" alt="記憶花園村落平面圖">
+                </div>
+
+                <h3>主要區域介紹</h3>
+                <div class="area-description">
+                    <h4>A區：入口接待與資訊中心</h4>
+                    <p>這裡是訪客與長輩們進入記憶花園的第一站，提供諮詢服務、活動資訊以及親切的接待。我們的目標是讓每一位到訪者都能感受到溫暖與歡迎。</p>
+                </div>
+                <div class="area-description">
+                    <h4>B區：陽光餐廳與交誼廳</h4>
+                    <p>提供營養均衡的餐點，並設有舒適的交誼空間。長輩們可以在此一同用餐、聊天、閱讀或參與小型團體活動，促進社交與互動。</p>
+                </div>
+                <div class="area-description">
+                    <h4>C區：特色療癒空間</h4>
+                    <p>這一區包含了我們精心設計的特色活動場所：</p>
+                    <ul>
+                        <li><a href="nostalgia-corner.html">懷舊回憶角：</a>一個充滿復古氛圍的角落，喚醒美好記憶。</li>
+                        <li><a href="music-zone.html">音樂律動區：</a>透過音樂與節奏，感受身心愉悅。</li>
+                        <li><a href="garden-therapy.html">園藝治療區：</a>在綠意盎然的戶外空間，親近自然，體驗栽種樂趣。</li>
+                    </ul>
+                </div>
+                <div class="area-description">
+                    <h4>D區：多功能活動室與靜養休憩區</h4>
+                    <p>提供舉辦大型講座、工作坊、電影欣賞等多功能活動的場地。同時也設有安靜的休憩區域，供長輩們靜思、小憩或進行個別化的認知活動。</p>
+                </div>
+                 <div class="area-description">
+                    <h4>E區：戶外散步道與景觀花園</h4>
+                    <p>圍繞著村落的是安全的無障礙散步道，以及四季變換的景觀花園。鼓勵長輩們每日散步，享受陽光與新鮮空氣，親近自然美景。</p>
+                </div>
+
+                <p style="text-align:center; margin-top:30px;">
+                    <a href="index.html#our-work" class="btn">返回了解我們的行動</a>
+                </p>
+
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <!-- ... 您的標準 footer ... -->
+        <div class="container">
+            <p>&copy; 2024 記憶花園實驗示範計畫. 保留所有權利。</p>
+            <p>此網站為概念演示，內容僅供參考。</p>
+        </div>
+    </footer>
+    <script src="script.js"></script> <!-- 引入共用腳本 -->
+</body>
+</html>

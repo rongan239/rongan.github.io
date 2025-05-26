@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>園藝治療區 (YouTube) - 記憶花園</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* 與 music-zone.html 中相同的隱藏播放器樣式 */
+        .youtube-player-container {
+            position: absolute;
+            left: -9999px;
+            top: -9999px;
+            width: 1px;
+            height: 1px;
+        }
+        .youtube-autoplay-status {
+            text-align: center;
+            font-size: 0.9em;
+            color: #5d7052;
+            margin: 20px auto 10px auto;
+            min-height: 30px;
+            max-width: 450px;
+            padding: 10px;
+            background-color: #f8f5f0;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">記憶花園</div>
+            <button class="menu-toggle" id="menu-toggle-btn" aria-label="Toggle navigation" aria-expanded="false">&#9776;</button>
+            <nav id="main-nav">
+                 <ul>
+                    <li><a href="index.html#hero-section">首頁</a></li>
+                    <li><a href="index.html#about-us">關於我們</a></li>
+                    <li><a href="index.html#experience-dementia">同理心體驗</a></li>
+                    <li><a href="index.html#our-work">我們的行動</a></li>
+                    <li><a href="index.html#impact-stories">成果與故事</a></li>
+                    <li><a href="index.html#get-involved">支持我們</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <section class="page-specific-content">
+                <a href="index.html#our-work" class="back-link">&laquo; 返回「我們的行動」</a>
+                <h2><span aria-hidden="true">🌿</span> 園藝治療區 (Horticultural Therapy Garden - YouTube 播放)</h2>
+                
+                <div class="youtube-player-container">
+                    <div id="youtube-player-garden"></div> 
+                </div>
+                <p id="youtube-autoplay-status-garden" class="youtube-autoplay-status">正在載入園藝治療區 YouTube 音樂...</p>
+
+                <div class="feature-intro">
+                    <img src="images/horticultural-therapy-garden.jpg" alt="園藝治療區主圖" class="main-feature-image">
+                    <p>「園藝治療區」是記憶花園裡一片充滿陽光、綠意與生命力的療癒空間。我們相信，透過親手接觸土壤、種植花草蔬果，長輩們不僅能活動筋骨，更能從大自然的循環中獲得平靜、喜悅與成就感。</p>
+                    <p>這個區域經過無障礙設計，讓行動不便的長輩也能輕鬆參與。在專業園藝治療師或志工的引導下，長輩們可以體驗從播種、澆灌、施肥到收成的完整過程。</p>
+                </div>
+
+                <h3>特色與效益</h3>
+                <ul>
+                    <li><strong>促進肢體活動：</strong>翻土、播種、澆水等動作有助於維持長輩的肌力與關節靈活度。</li>
+                    <li><strong>感官刺激：</strong>植物的色彩、香氣、觸感以及泥土的氣息，能提供豐富的感官體驗。</li>
+                    <li><strong>提升專注力與認知功能：</strong>記憶植物名稱、種植步驟、觀察生長等有助於活化大腦。</li>
+                    <li><strong>情緒療癒與壓力釋放：</strong>與大自然連結能帶來平靜感，減輕焦慮與憂鬱。</li>
+                    <li><strong>增強成就感與自我價值：</strong>看著親手種植的植物成長茁壯，甚至收成食用，能帶來莫大的喜悅。</li>
+                    <li><strong>促進社交互動：</strong>共同參與園藝活動能增加長輩間的交流與合作。</li>
+                </ul>
+
+                <h3>空間佈置與設施</h3>
+                <p>我們為長輩打造了一個安全、友善且充滿生機的園藝環境：</p>
+                <div class="image-gallery">
+                    <img src="images/garden-detail1.jpg" alt="長輩們在高架花床旁進行園藝活動">
+                    <img src="images/garden-detail2.jpg" alt="適合輪椅使用者操作的園藝工具">
+                    <!-- <img src="images/garden-detail3.jpg" alt="園區內的休憩座椅與遮陽設施"> -->
+                </div>
+                <ul>
+                    <li>**高架花床：**設計了不同高度的高架花床，方便站立或乘坐輪椅的長輩操作，無需長時間彎腰。</li>
+                    <li>**無障礙步道：**園區內鋪設平坦防滑的無障礙步道，方便輪椅和助行器通行。</li>
+                    <li>**易握工具：**提供握柄加粗、輕量化的園藝工具，適合抓握力較弱的長輩使用。</li>
+                    <li>**灌溉系統：**設置方便使用的灑水器或滴灌系統，減輕澆水負擔。</li>
+                    <li>**休憩與遮陽：**園區內設有舒適的座椅和遮陽設施，供長輩在活動間隙休息。</li>
+                    <li>**植物選擇：**種植易於照料、生長快速、具觀賞性或實用性的植物，如香草（薄荷、迷迭香）、觀賞花卉（日日春、非洲鳳仙）、簡易蔬果（小番茄、生菜）。</li>
+                </ul>
+
+                <h3>在這裡舉辦的活動</h3>
+                <ul>
+                    <li><strong>季節性種植計畫：</strong>根據季節變化，引導長輩種植不同的花草蔬果。</li>
+                    <li><strong>香草採集與應用：</strong>採集種植的香草，製作香包、泡花草茶等。</li>
+                    <li><strong>蔬果收成分享會：</strong>將收成的蔬果共同烹飪或分享給社區。</li>
+                    <li><strong>植物手作DIY：</strong>例如押花、組合盆栽、植物染等。</li>
+                    <li><strong>園藝知識小學堂：</strong>分享基礎的植物照護知識與趣聞。</li>
+                </ul>
+                 <p style="text-align:center; margin-top:30px;">
+                    <a href="index.html#our-work" class="btn">探索其他特色區域</a>
+                </p>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 記憶花園實驗示範計畫. 保留所有權利。</p>
+            <p>此網站為概念演示，內容僅供參考。</p>
+        </div>
+    </footer>
+
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <script src="script.js"></script>
+</body>
+</html>

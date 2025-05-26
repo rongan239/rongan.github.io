@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>懷舊回憶角 (YouTube) - 記憶花園</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* 與 music-zone.html 中相同的隱藏播放器樣式 */
+        .youtube-player-container {
+            position: absolute;
+            left: -9999px;
+            top: -9999px;
+            width: 1px;
+            height: 1px;
+        }
+        .youtube-autoplay-status {
+            text-align: center;
+            font-size: 0.9em;
+            color: #5d7052;
+            margin: 20px auto 10px auto;
+            min-height: 30px;
+            max-width: 450px;
+            padding: 10px;
+            background-color: #f8f5f0;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">記憶花園</div>
+            <button class="menu-toggle" id="menu-toggle-btn" aria-label="Toggle navigation" aria-expanded="false">&#9776;</button>
+            <nav id="main-nav">
+                 <ul>
+                    <li><a href="index.html#hero-section">首頁</a></li>
+                    <li><a href="index.html#about-us">關於我們</a></li>
+                    <li><a href="index.html#experience-dementia">同理心體驗</a></li>
+                    <li><a href="index.html#our-work">我們的行動</a></li>
+                    <li><a href="index.html#impact-stories">成果與故事</a></li>
+                    <li><a href="index.html#get-involved">支持我們</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <section class="page-specific-content">
+                <a href="index.html#our-work" class="back-link">&laquo; 返回「我們的行動」</a>
+                <h2><span aria-hidden="true">🕰️</span> 懷舊回憶角 (Nostalgia Corner - YouTube 播放)</h2>
+                
+                <div class="youtube-player-container">
+                    <div id="youtube-player-nostalgia"></div> 
+                </div>
+                <p id="youtube-autoplay-status-nostalgia" class="youtube-autoplay-status">正在載入懷舊 YouTube 音樂...</p>
+
+                <div class="feature-intro">
+                    <img src="images/nostalgia-corner.jpg" alt="懷舊回憶角主圖" class="main-feature-image">
+                    <p>「懷舊回憶角」是記憶花園中一個充滿溫馨與故事的特別角落。我們精心佈置了這個空間，希望透過熟悉的物件、氣味與聲音，輕輕敲開長輩們記憶的門扉，讓他們在這裡找到慰藉、樂趣與連結。</p>
+                    <p>每一件展品都經過細心挑選，旨在引發正向的情感連結，鼓勵長輩們分享他們的人生故事，促進社交互動，並從回憶中汲取力量。</p>
+                </div>
+
+                <h3>特色與效益</h3>
+                 <ul>
+                    <li><strong>喚醒長期記憶：</strong>透過視覺、觸覺、聽覺等多感官刺激，幫助長輩連結到過去的愉快經驗。</li>
+                    <li><strong>促進語言表達：</strong>熟悉的物件能成為談話的起點，鼓勵長輩開口分享。</li>
+                    <li><strong>增進社交互動：</strong>共同的回憶能拉近長輩之間、以及長輩與照護者、家屬的距離。</li>
+                    <li><strong>提升自我價值感：</strong>分享個人生命故事能讓長輩感受到被尊重與肯定。</li>
+                    <li><strong>情緒舒緩：</strong>沉浸在美好的回憶中，有助於減輕焦慮與不安。</li>
+                </ul>
+
+                <h3>空間佈置與氛圍</h3>
+                 <p>我們致力於營造一個既安全又引人入勝的懷舊氛圍：</p>
+                <div class="image-gallery">
+                    <img src="images/nostalgia-detail1.jpg" alt="舊式收音機與黑膠唱片">
+                    <img src="images/nostalgia-detail2.jpg" alt="牆上掛著的泛黃老照片">
+                    <!-- <img src="images/nostalgia-detail3.jpg" alt="古早味糖果罐與童玩"> -->
+                </div>
+                <ul>
+                    <li>**視覺元素：**牆上掛著台灣五、六零年代的電影海報、家庭老照片；櫥窗裡展示著舊時的菸酒牌、明星花露水、大同寶寶等。</li>
+                    <li>**聽覺元素：**背景播放著與時代相符的懷舊歌曲或輕音樂，營造氛圍。</li>
+                    <li>**觸覺元素：**擺放著觸感溫潤的木製傢俱、柔軟的花布抱枕、以及可以把玩的舊時童玩。</li>
+                    <li>**安全考量：**所有擺設都穩固不易傾倒，地面平整無障礙，光線充足但柔和。</li>
+                </ul>
+
+                <h3>在這裡舉辦的活動</h3>
+                <ul>
+                    <li>「我的故事・你的歌」生命故事回顧</li>
+                    <li>懷舊金曲卡拉OK（可配合 YouTube 播放伴奏）</li>
+                    <li>老電影欣賞與討論會</li>
+                    <li>「想當年」主題茶話會</li>
+                    <li>傳統手作體驗</li>
+                </ul>
+                 <p style="text-align:center; margin-top:30px;">
+                    <a href="index.html#our-work" class="btn">探索其他特色區域</a>
+                </p>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 記憶花園實驗示範計畫. 保留所有權利。</p>
+            <p>此網站為概念演示，內容僅供參考。</p>
+        </div>
+    </footer>
+
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <script src="script.js"></script>
+</body>
+</html>

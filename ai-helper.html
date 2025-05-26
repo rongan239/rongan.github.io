@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI小幫手 - 失智症資訊 - 記憶花園</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .chatbot-container {
+            max-width: 700px;
+            margin: 20px auto;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            padding: 20px;
+            border: 1px solid #e0dcd3;
+        }
+        .chat-window {
+            height: 350px;
+            overflow-y: auto;
+            border: 1px solid #ddd;
+            padding: 15px;
+            margin-bottom: 15px;
+            background-color: #f9f9f9;
+            border-radius: 6px;
+        }
+        .chat-message {
+            margin-bottom: 12px;
+            padding: 8px 12px;
+            border-radius: 18px; /* More rounded chat bubbles */
+            max-width: 80%;
+            line-height: 1.5;
+        }
+        .user-message {
+            background-color: #a3b18a; /* Soft olive for user */
+            color: white;
+            margin-left: auto; /* Align to right */
+            border-bottom-right-radius: 5px; /* Bubble tail */
+        }
+        .bot-message {
+            background-color: #e9e3da; /* Light beige for bot */
+            color: #333;
+            margin-right: auto; /* Align to left */
+            border-bottom-left-radius: 5px; /* Bubble tail */
+        }
+        .chat-input-area {
+            display: flex;
+            gap: 10px;
+        }
+        .chat-input-area input[type="text"] {
+            flex-grow: 1;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 20px;
+            font-size: 1rem;
+        }
+        .chat-input-area button {
+            padding: 10px 18px;
+            font-size: 1rem;
+            /* Uses .btn class from style.css */
+        }
+        .predefined-questions {
+            margin-top: 25px;
+            padding-top: 15px;
+            border-top: 1px dashed #ccc;
+        }
+        .predefined-questions h4 {
+            margin-bottom: 10px;
+            font-size: 1.1rem;
+        }
+        .predefined-questions button {
+            background-color: #f1f1f1;
+            color: #555;
+            border: 1px solid #ddd;
+            padding: 8px 12px;
+            margin: 5px;
+            border-radius: 15px;
+            cursor: pointer;
+            font-size: 0.9rem;
+            transition: background-color 0.2s ease;
+        }
+        .predefined-questions button:hover {
+            background-color: #e0dcd3;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <!-- ... 您的標準 header (包含更新後的導覽列) ... -->
+        <div class="container">
+            <div class="logo">記憶花園</div>
+            <button class="menu-toggle" id="menu-toggle-btn" aria-label="Toggle navigation" aria-expanded="false">&#9776;</button>
+            <nav id="main-nav">
+                 <ul>
+                    <li><a href="index.html#hero-section">首頁</a></li>
+                    <li><a href="village-guide.html">村落導覽</a></li>
+                    <li><a href="index.html#about-us">關於我們</a></li>
+                    <li><a href="index.html#experience-dementia">同理心體驗</a></li>
+                    <li><a href="index.html#our-work">我們的行動</a></li>
+                    <li><a href="index.html#impact-stories">成果與故事</a></li>
+                    <li><a href="ai-helper.html" class="active">AI小幫手</a></li>
+                    <li><a href="index.html#get-involved">支持我們</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <section class="page-specific-content">
+                <h2><span aria-hidden="true">🤖</span> AI小幫手 - 失智症資訊問答</h2>
+                <p>您好！我是記憶花園的AI小幫手，可以回答一些關於失智症的常見問題。請在下方輸入您的問題，或點選常見問題按鈕。</p>
+
+                <div class="chatbot-container">
+                    <div class="chat-window" id="chat-window">
+                        <div class="chat-message bot-message">
+                            您好！請問有什麼關於失智症的問題想問我嗎？
+                        </div>
+                    </div>
+                    <div class="chat-input-area">
+                        <input type="text" id="user-input" placeholder="請在這裡輸入問題...">
+                        <button id="send-btn" class="btn">傳送</button>
+                    </div>
+                    <div class="predefined-questions">
+                        <h4>或點選常見問題：</h4>
+                        <button class="predefined-q-btn" data-question="什麼是失智症？">什麼是失智症？</button>
+                        <button class="predefined-q-btn" data-question="失智症有哪些常見症狀？">失智症有哪些常見症狀？</button>
+                        <button class="predefined-q-btn" data-question="如何預防失智症？">如何預防失智症？</button>
+                        <button class="predefined-q-btn" data-question="如何與失智者溝通？">如何與失智者溝通？</button>
+                        <button class="predefined-q-btn" data-question="記憶花園如何幫助失智長輩？">記憶花園如何幫助失智長輩？</button>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <!-- ... 您的標準 footer ... -->
+        <div class="container">
+            <p>&copy; 2024 記憶花園實驗示範計畫. 保留所有權利。</p>
+            <p>此網站為概念演示，內容僅供參考。</p>
+        </div>
+    </footer>
+    <script src="script.js"></script> <!-- 引入共用腳本 -->
+</body>
+</html>

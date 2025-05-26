@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>音樂律動區 (YouTube) - 記憶花園</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* 與 music-zone.html 中相同的隱藏播放器樣式 */
+        .youtube-player-container {
+            position: absolute;
+            left: -9999px;
+            top: -9999px;
+            width: 1px;
+            height: 1px;
+        }
+        .youtube-autoplay-status {
+            text-align: center;
+            font-size: 0.9em;
+            color: #5d7052;
+            margin: 20px auto 10px auto;
+            min-height: 30px;
+            max-width: 450px;
+            padding: 10px;
+            background-color: #f8f5f0;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">記憶花園</div>
+            <button class="menu-toggle" id="menu-toggle-btn" aria-label="Toggle navigation" aria-expanded="false">&#9776;</button>
+            <nav id="main-nav">
+                 <ul>
+                    <li><a href="index.html#hero-section">首頁</a></li>
+                    <li><a href="index.html#about-us">關於我們</a></li>
+                    <li><a href="index.html#experience-dementia">同理心體驗</a></li>
+                    <li><a href="index.html#our-work">我們的行動</a></li>
+                    <li><a href="index.html#impact-stories">成果與故事</a></li>
+                    <li><a href="index.html#get-involved">支持我們</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <section class="page-specific-content">
+                <a href="index.html#our-work" class="back-link">&laquo; 返回「我們的行動」</a>
+                <h2><span aria-hidden="true">🎶</span> 音樂律動區 (Music & Movement Zone - YouTube 播放)</h2>
+                
+                <div class="youtube-player-container">
+                    <div id="youtube-player"></div> 
+                </div>
+                <p id="youtube-autoplay-status" class="youtube-autoplay-status">正在載入 YouTube 音樂...</p>
+
+                <div class="feature-intro">
+                    <img src="images/music-movement-zone.jpg" alt="音樂律動區主圖" class="main-feature-image">
+                    <p>在「音樂律動區」，我們相信音樂是跨越語言與記憶的橋樑。這個充滿活力與歡笑的空間，旨在透過音樂欣賞、歌唱、簡易樂器演奏以及溫和的肢體律動，為長輩們帶來愉悅的身心體驗。</p>
+                    <p>無論是熟悉的旋律還是全新的節奏，音樂都能有效地刺激感官、喚醒情感、促進社交，並為日常生活增添色彩與樂趣。</p>
+                </div>
+
+                <h3>特色與效益</h3>
+                <ul>
+                    <li><strong>情緒調節與放鬆：</strong>優美的音樂有助於舒緩焦慮、平靜心緒，提升整體幸福感。</li>
+                    <li><strong>認知刺激：</strong>跟隨節奏、記憶歌詞、辨識樂器等活動能活化大腦功能。</li>
+                    <li><strong>促進社交互動：</strong>共同歌唱、合奏或參與團體律動能增進人際連結與歸屬感。</li>
+                    <li><strong>提升肢體協調：</strong>溫和的肢體律動能改善平衡感、柔軟度和關節活動度。</li>
+                    <li><strong>增強自我表達：</strong>透過歌聲或樂器，長輩可以非語言的方式表達情感。</li>
+                </ul>
+
+                <h3>空間佈置與氛圍</h3>
+                 <p>我們打造了一個安全、舒適且能激發參與熱情的音樂環境：</p>
+                <div class="image-gallery">
+                    <img src="images/music-detail1.jpg" alt="長輩們使用簡易打擊樂器">
+                    <img src="images/music-detail2.jpg" alt="舒適的座椅與活動空間">
+                </div>
+                <ul>
+                    <li>**空間規劃：**寬敞明亮的開放式空間，鋪設防滑地板或舒適的活動軟墊，方便輪椅使用者參與。</li>
+                    <li>**器材設備：**備有音響系統、投影設備（播放歌詞或影片）、多種簡易打擊樂器（如手鼓、沙鈴、三角鐵）、以及適合長輩的麥克風。</li>
+                    <li>**氛圍營造：**牆面可採用溫暖明亮的色彩，並以音樂符號、樂器圖案或知名音樂家肖像點綴。充足的自然光線與良好通風。</li>
+                    <li>**座位安排：**提供舒適且具支撐性的座椅，可彈性調整排列方式，以適應不同活動需求。</li>
+                </ul>
+
+                <h3>在這裡舉辦的活動</h3>
+                <ul>
+                    <li><strong>懷舊金曲歡唱時光：</strong>定期播放長輩們熟悉的經典老歌，鼓勵大家一起哼唱。</li>
+                    <li><strong>簡易樂器合奏：</strong>在帶領者引導下，使用簡單樂器共同演奏出旋律。</li>
+                    <li><strong>音樂治療團體課程：</strong>由專業音樂治療師設計並帶領，針對特定需求進行介入。</li>
+                    <li><strong>主題音樂欣賞會：</strong>例如「台灣民謠之夜」、「古典音樂下午茶」等。</li>
+                    <li><strong>溫和肢體律動：</strong>配合音樂進行簡單的上肢伸展、坐姿舞蹈等活動。</li>
+                </ul>
+                 <p style="text-align:center; margin-top:30px;">
+                    <a href="index.html#our-work" class="btn">探索其他特色區域</a>
+                </p>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 記憶花園實驗示範計畫. 保留所有權利。</p>
+            <p>此網站為概念演示，內容僅供參考。</p>
+        </div>
+    </footer>
+
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <script src="script.js"></script>
+</body>
+</html>
